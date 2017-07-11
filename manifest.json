@@ -1,0 +1,20 @@
+{
+  "name": "Mangrove Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Get your time back",
+  "homepage_url": "http://mangrove.io",
+  "icons": {
+    "19": "icons/icon19.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "css": ["src/inject/inject.css"],
+      "js": ["src/inject/inject.js"]
+    }
+  ]
+}
